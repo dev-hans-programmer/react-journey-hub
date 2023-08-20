@@ -1,0 +1,51 @@
+.steps-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.steps-container .steps {
+    width: 50%;
+    height: 300px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.steps-container .steps .buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+button {
+    background-color: violet;
+    padding: 5px 8px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
