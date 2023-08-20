@@ -7,6 +7,9 @@ const items = [
    { id: '1', title: 'Learn React' },
    { id: '2', title: 'Build simple component' },
    { id: '3', title: 'Land a Job' },
+   { id: '4', title: 'Slog in a Job' },
+   { id: '5', title: 'Resign' },
+   { id: '6', title: 'Repeat' },
 ];
 
 function App() {
@@ -21,14 +24,13 @@ function App() {
 
    function handlePrev() {
       if (currentIndex > 0) setCurrentIndex((index) => index - 1);
-      console.log('STEPS', Steps);
    }
 
    return (
       <div className='steps-container'>
          <div className='steps'>
             {/* Steps */}
-            <Steps index={currentIndex} />
+            <Steps index={currentIndex} total={items.length} />
             {/* Title */}
             <h3>{currentData.title}</h3>
             <div className='buttons-container'>

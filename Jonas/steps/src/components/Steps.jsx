@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
-function Steps({ index }) {
-   const arr = [0, 1, 2];
+function Steps({ index, total }) {
+   function produceItems() {
+      return Array.from({ length: total }, (_, i) => i);
+   }
+
    return (
       <div className='container'>
-         {arr.map((item) => (
+         {produceItems().map((item) => (
             <div
                key={item}
                className='step'
