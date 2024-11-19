@@ -1,0 +1,14 @@
+
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+}
+#top ,#bottom, #last{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
